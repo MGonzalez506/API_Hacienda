@@ -35,11 +35,15 @@ else
 }
 
 $corePath = $config['modules']['coreInstall'];
+$corePath = "/home/mg506/Documents/GitHub/API_Hacienda/api/";
 if (file_exists($corePath."core/boot.php"))
     include_once($corePath."core/boot.php");
 else
 {
-    echo "No se ha encontrado la carpeta de \"api\", por favor verifica la configuración \$config['modules']['coreInstall'] en \"settings.php\".";
+    echo $corePath;
+    echo "\\n";
+    echo "Chanchito";
+    echo "Nel encontrado la carpeta de \"api\", por favor verifica la configuración \$config['modules']['coreInstall'] en \"settings.php\".";
     exit;
 }
 
